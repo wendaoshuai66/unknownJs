@@ -5,8 +5,8 @@
 
 
 ## 目录
-1. [作用域是什么](#docs/scope.md)
-1. [类型和语法--类型](#docs/type.md)
-1. [类型和语法--值](#docs/value.md)
+1. [作用域是什么](#docs/scope)
+1. [类型和语法--类型](#docs/type)
+1. [类型和语法--值](#docs/value)
 
 
