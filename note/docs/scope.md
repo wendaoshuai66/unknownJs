@@ -24,6 +24,23 @@ var a= 2;
 总结：
 
 变量的赋值操作会执行两个动作：1. 编译器在当前作用域中声明一个变量； 2. 运行时引擎在作用域中查找该变量，找到便赋值，找不到抛出异常。
+
+## LHS RHS
+
+```
+var a = 2;
+引擎会为变量 a 进行 LHS 查询。另外一个查找的类型叫作 RHS。
+```
+
+![https://wendaoshuai66.github.io/unknownJs/note/images/lhs.png](https://wendaoshuai66.github.io/unknownJs/note/images/lhs.png)
+
+看下面代码，加深理解
+
+```
+console.log(a); // 对 a 的引用是 RHS 引用。因为没有对 a 赋值，而是查找并取得 a 的值。
+a = 2; // 对 a 的引用是 LHS 引用。不用关心 a 的值是什么，只需要为 = 2 这个赋值操作找到一个目标。
+```
+
 ##异常
 
     function foo(a) {
