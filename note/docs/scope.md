@@ -24,6 +24,9 @@ var a= 2;
 总结：
 
 变量的赋值操作会执行两个动作：1. 编译器在当前作用域中声明一个变量； 2. 运行时引擎在作用域中查找该变量，找到便赋值，找不到抛出异常。
+##提升
+![https://wendaoshuai66.github.io/unknownJs/note/images/tisheng.png](https://wendaoshuai66.github.io/unknownJs/note/images/tisheng.png)
+
 
 
 
