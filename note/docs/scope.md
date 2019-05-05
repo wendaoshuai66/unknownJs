@@ -24,6 +24,22 @@ var a= 2;
 总结：
 
 变量的赋值操作会执行两个动作：1. 编译器在当前作用域中声明一个变量； 2. 运行时引擎在作用域中查找该变量，找到便赋值，找不到抛出异常。
+##异常
+
+    function foo(a) {
+     console.log( a + b );
+     b = a;
+    }
+    foo( 2 );
+
+第一次对 b 进行 RHS 查询时是无法找到该变量的。也就是说，这是一个“未声明”的变
+
+量，因为在任何相关的作用域中都无法找到它。
+
+如果 RHS 查询在所有嵌套的作用域中遍寻不到所需的变量，引擎就会抛出 ReferenceError
+
+异常。值得注意的是，ReferenceError 是非常重要的异常类型
+
 ##提升
 ![https://wendaoshuai66.github.io/unknownJs/note/images/tisheng.png](https://wendaoshuai66.github.io/unknownJs/note/images/tisheng.png)
 
